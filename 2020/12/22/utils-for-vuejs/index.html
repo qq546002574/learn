@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue3 Components API使用, Benusone">
+    <meta name="keywords" content="自己使用的一些js方法, Benusone">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue3 Components API使用 | Benusone</title>
+    <title>自己使用的一些js方法 | Benusone</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -444,7 +444,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue3 Components API使用</h1>
+                    <h1 class="description center-align post-title">自己使用的一些js方法</h1>
                 </div>
             </div>
         </div>
@@ -597,15 +597,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="vue3-Components-API使用"><a href="#vue3-Components-API使用" class="headerlink" title="vue3 Components API使用"></a>vue3 Components API使用</h2><h3 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h3>
+                <h2 id="自己使用的一些js方法"><a href="#自己使用的一些js方法" class="headerlink" title="自己使用的一些js方法"></a>自己使用的一些js方法</h2><h3 id="daySwitchDate"><a href="#daySwitchDate" class="headerlink" title="daySwitchDate"></a>daySwitchDate</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* 例如：364天=11月30天</span><br><span class="line">* day 天数 </span><br><span class="line">*/</span><br><span class="line"><span class="built_in">export</span> <span class="keyword">function</span> daySwitchDate(day) &#123;</span><br><span class="line">    const hm = day * 86400000;</span><br><span class="line">    const date = new Date(hm);</span><br><span class="line">    const year = date.getFullYear() - 1970 ? date.getFullYear() - 1970 + <span class="string">&#x27;年&#x27;</span> : <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    const month = date.getMonth() ? date.getMonth() + <span class="string">&#x27;月&#x27;</span> : <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    const d = date.getDate() - 1 ? (date.getDate() - 1) + <span class="string">&#x27;天&#x27;</span> : <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    const str = year + month + d;</span><br><span class="line">    <span class="built_in">return</span> str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-	<div class="row">
-    <embed src="https://qq546002574.github.io/my-storage/pdf/Vue-3-Cheat-Sheet.pdf" width="100%" height="550" type="application/pdf">
-	</div>
+<h3 id="initFormatDate"><a href="#initFormatDate" class="headerlink" title="initFormatDate"></a>initFormatDate</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* Date=&gt;string</span><br><span class="line">* timestramp 毫秒数 </span><br><span class="line">* fmt 日期格式 <span class="string">&#x27;yyyy-MM-dd hh:mm:ss&#x27;</span></span><br><span class="line">*/</span><br><span class="line"><span class="built_in">export</span> <span class="keyword">function</span> initFormatDate(timestramp, fmt) &#123;</span><br><span class="line">    const o = &#123;</span><br><span class="line">        <span class="string">&#x27;M+&#x27;</span>: timestramp.getMonth() + 1,                 // 月份</span><br><span class="line">        <span class="string">&#x27;d+&#x27;</span>: timestramp.getDate(),                    // 日</span><br><span class="line">        <span class="string">&#x27;h+&#x27;</span>: timestramp.getHours(),                   // 小时</span><br><span class="line">        <span class="string">&#x27;m+&#x27;</span>: timestramp.getMinutes(),                 // 分</span><br><span class="line">        <span class="string">&#x27;s+&#x27;</span>: timestramp.getSeconds(),                 // 秒</span><br><span class="line">        <span class="string">&#x27;q+&#x27;</span>: Math.floor((timestramp.getMonth() + 3) / 3), // 季度</span><br><span class="line">        S: timestramp.getMilliseconds()             // 毫秒</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">if</span> (/(y+)/.<span class="built_in">test</span>(fmt)) &#123; fmt = fmt.replace(RegExp.<span class="variable">$1</span>, (timestramp.getFullYear() + <span class="string">&#x27;&#x27;</span>).substr(4 - RegExp.<span class="variable">$1</span>.length)); &#125;</span><br><span class="line">    <span class="keyword">for</span> (const k <span class="keyword">in</span> o) &#123;</span><br><span class="line">        <span class="keyword">if</span> (new RegExp(<span class="string">&#x27;(&#x27;</span> + k + <span class="string">&#x27;)&#x27;</span>).<span class="built_in">test</span>(fmt)) &#123; fmt = fmt.replace(RegExp.<span class="variable">$1</span>, RegExp.<span class="variable">$1</span>.length == 1 ? o[k] : (<span class="string">&#x27;00&#x27;</span> + o[k]).substr((<span class="string">&#x27;&#x27;</span> + o[k]).length)); &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> fmt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
+<h3 id="jsonToString"><a href="#jsonToString" class="headerlink" title="jsonToString"></a>jsonToString</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* json=&gt;string</span><br><span class="line">* obj object</span><br><span class="line">*/</span><br><span class="line"><span class="built_in">export</span> <span class="keyword">function</span> jsonToString (obj)&#123;   </span><br><span class="line">        var that = this;    </span><br><span class="line">        switch(typeof(obj))&#123;   </span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;string&#x27;</span>:   </span><br><span class="line">                <span class="built_in">return</span> <span class="string">&#x27;&quot;&#x27;</span> + obj.replace(/([<span class="string">&quot;\\])/g, &#x27;\\<span class="variable">$1</span>&#x27;) + &#x27;&quot;</span><span class="string">&#x27;;   </span></span><br><span class="line"><span class="string">            case &#x27;</span>array<span class="string">&#x27;:   </span></span><br><span class="line"><span class="string">                return &#x27;</span>[<span class="string">&#x27; + obj.map(that.jsonToString).join(&#x27;</span>,<span class="string">&#x27;) + &#x27;</span>]<span class="string">&#x27;;   </span></span><br><span class="line"><span class="string">            case &#x27;</span>object<span class="string">&#x27;:   </span></span><br><span class="line"><span class="string">                 if(obj instanceof Array)&#123;   </span></span><br><span class="line"><span class="string">                    var strArr = [];   </span></span><br><span class="line"><span class="string">                    var len = obj.length;   </span></span><br><span class="line"><span class="string">                    for(var i=0; i&lt;len; i++)&#123;   </span></span><br><span class="line"><span class="string">                        strArr.push(that.jsonToString(obj[i]));   </span></span><br><span class="line"><span class="string">                    &#125;   </span></span><br><span class="line"><span class="string">                    return &#x27;</span>[<span class="string">&#x27; + strArr.join(&#x27;</span>,<span class="string">&#x27;) + &#x27;</span>]<span class="string">&#x27;;   </span></span><br><span class="line"><span class="string">                &#125;else if(obj==null)&#123;   </span></span><br><span class="line"><span class="string">                    return &#x27;</span>null<span class="string">&#x27;;   </span></span><br><span class="line"><span class="string">                &#125;else&#123;   </span></span><br><span class="line"><span class="string">                    var string = [];   </span></span><br><span class="line"><span class="string">                    for (var property in obj) string.push(that.jsonToString(property) + &#x27;</span>:<span class="string">&#x27; + that.jsonToString(obj[property]));   </span></span><br><span class="line"><span class="string">                    return &#x27;</span>&#123;<span class="string">&#x27; + string.join(&#x27;</span>,<span class="string">&#x27;) + &#x27;</span>&#125;<span class="string">&#x27;;   </span></span><br><span class="line"><span class="string">                &#125;   </span></span><br><span class="line"><span class="string">            case &#x27;</span>number<span class="string">&#x27;:   </span></span><br><span class="line"><span class="string">                return obj;   </span></span><br><span class="line"><span class="string">            case false:   </span></span><br><span class="line"><span class="string">                return obj;   </span></span><br><span class="line"><span class="string">        &#125;   </span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -631,7 +627,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://cool.hushuaiace.fun/2020/12/22/vue3-use/">http://cool.hushuaiace.fun/2020/12/22/vue3-use/</a>
+                    <a href="http://cool.hushuaiace.fun/2020/12/22/utils-for-vuejs/">http://cool.hushuaiace.fun/2020/12/22/utils-for-vuejs/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -871,13 +867,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/22/utils-for-vuejs/">
+                <a href="/2020/12/22/git-problem/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="自己使用的一些js方法">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="git使用一系列问题">
                         
-                        <span class="card-title">自己使用的一些js方法</span>
+                        <span class="card-title">git使用一系列问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -901,8 +897,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">前端技术</span>
+                    <a href="/tags/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">基本运维知识</span>
                     </a>
                     
                 </div>
@@ -913,7 +909,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/12/22/vue3-use/">
@@ -943,7 +939,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
