@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="视频破解, Benusone">
+    <meta name="keywords" content="SoftEther安装配置教程, Benusone">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>视频破解 | Benusone</title>
+    <title>SoftEther安装配置教程 | Benusone</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -439,12 +439,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">视频破解</h1>
+                    <h1 class="description center-align post-title">SoftEther安装配置教程</h1>
                 </div>
             </div>
         </div>
@@ -560,8 +560,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
-                                <span class="chip bg-color">小知识</span>
+                            <a href="/tags/%E7%BF%BB%E5%A2%99/">
+                                <span class="chip bg-color">翻墙</span>
                             </a>
                         
                     </div>
@@ -576,7 +576,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-03
+                    2021-01-04
                 </div>
                 
 
@@ -597,7 +597,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="在链接前添加"><a href="#在链接前添加" class="headerlink" title="在链接前添加"></a>在链接前添加</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://wn.run/+<span class="string">&#x27;原链接&#x27;</span></span><br></pre></td></tr></table></figure>
+                <h2 id="SoftEther安装配置教程"><a href="#SoftEther安装配置教程" class="headerlink" title="SoftEther安装配置教程"></a>SoftEther安装配置教程</h2><h3 id="1、SoftEther简介"><a href="#1、SoftEther简介" class="headerlink" title="1、SoftEther简介"></a>1、SoftEther简介</h3><p>我们来先科普一下什么是SoftEther吧，SoftEther是由日本筑波大学的登大遊在硕士论文中提出的开源、跨平台、多重协议的虚拟专用网方案,其实我更看重的是他的内网穿透功能，下面来一张图片，说明它的强大。<br><img src="https://coding-net-production-file-ci.codehub.cn/567e6f30-4e32-11eb-9da7-616d01255b09.png?sign=gRssNYgSDaqQ8QgNElUaZdov2qphPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQyNDYwJnQ9MTYwOTcyNjQ2MCZyPTE1MjQ0NDYyJmY9LzU2N2U2ZjMwLTRlMzItMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>SoftEther正确定的安装配置，可以实现企业内部网络访问，家庭私有云访问，其功能如下：</p>
+<p>（1）可以实现家里办公，即在家可以连接到企业网络；</p>
+<p>（2）可以实现互联网办公；</p>
+<p>（3）可以实现互联网访问家庭内部网络内容，如家庭存储。</p>
+<p>很多情况下，我们需要远程办公，但是有很多内部资料只有在公司的局域网内才可以访问，或者我们需要远程连接到公司的电脑，这些情况在正常情况下我们是不可能实现的，但是我们正确安装与配置Softether，就可以轻松的实现，就如同上图所示，我们在家里使用电脑或手机，就可以访问企业内部的电脑1、电脑2、电脑n以及企业服务器，因为我们在同一网格里，所以当然可以访问了。</p>
+<p>下面来介绍安装过程吧（翻墙与内网穿透的原理是一样的）。</p>
+<h3 id="2、准备内容如下"><a href="#2、准备内容如下" class="headerlink" title="2、准备内容如下"></a>2、准备内容如下</h3><p>服务器：CentOS7（如果操作不熟练，可以选择windows的，一样，这里介绍CentOS7的）。</p>
+<p>连接服务器配置的客户端电脑：Windows10（你也可以选择win7或其它）。</p>
+<h3 id="3、服务器安装配置"><a href="#3、服务器安装配置" class="headerlink" title="3、服务器安装配置"></a>3、服务器安装配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 因为要在线编译，所以要安装gcc及其它组件</span></span><br><span class="line">yum -y install gcc zlib-devel openssl-devel readline-devel ncurses-devel</span><br></pre></td></tr></table></figure>
+<p>安装完成界面如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/f447ce50-4e32-11eb-9da7-616d01255b09.png?sign=lvvq6gzRxdDPXmx/VLPMdbWrw1thPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQyNjM2JnQ9MTYwOTcyNjYzNiZyPTcyNDI4MTM5JmY9L2Y0NDdjZTUwLTRlMzItMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载SoftEther 由于时间原因，版本可能会有变化，大家可以到官网下载</span></span><br><span class="line">wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.29-9680-rtm/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+<p>下载完成界面如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/2faa2330-4e33-11eb-9da7-616d01255b09.png?sign=u5G+uzHzTyNn8sraXQiEEyprkqNhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQyNzQzJnQ9MTYwOTcyNjc0MyZyPTEzNDk2NjIxJmY9LzJmYWEyMzMwLTRlMzMtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+<p><img src="https://coding-net-production-file-ci.codehub.cn/575be170-4e33-11eb-9da7-616d01255b09.png?sign=4NlgBhNPhR+zUXILJaRvw7t+nKxhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQyODAyJnQ9MTYwOTcyNjgwMiZyPTkwODk0MDI1JmY9LzU3NWJlMTcwLTRlMzMtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>解压完成界面如下图所示。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切入到目录中</span></span><br><span class="line"><span class="built_in">cd</span> vpnserver/</span><br></pre></td></tr></table></figure>
+<p>目录切换界面如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/7e027140-4e33-11eb-9da7-616d01255b09.png?sign=V7eBILbBVUZwhJkOtxX/KMqvNpBhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQyODY3JnQ9MTYwOTcyNjg2NyZyPTMxNzY3MTI1JmY9LzdlMDI3MTQwLTRlMzMtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编译</span></span><br><span class="line">make</span><br></pre></td></tr></table></figure>
+<p>编译之后，会让我们选择同意协议，我们选择1.yes即可（输入1后回车），如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/db4c4740-4e33-11eb-9da7-616d01255b09.png?sign=ng4VIypdErwd+eSWzzGXsL1wB65hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMDIzJnQ9MTYwOTcyNzAyMyZyPTQ3NDEzMzQzJmY9L2RiNGM0NzQwLTRlMzMtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>麻烦的是让你再次确认协议是否理解，我们同样选择1.yes即可（输入1后回车），如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/f7ce8ea0-4e33-11eb-9da7-616d01255b09.png?sign=bjvI3/ZfxdIRT9cSKecQze1omQlhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMDcyJnQ9MTYwOTcyNzA3MiZyPTQ2MjQ0MTk1JmY9L2Y3Y2U4ZWEwLTRlMzMtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>再再次同意协议，同样选择1.yes即可（输入1后回车），如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/1321cbe0-4e34-11eb-9da7-616d01255b09.png?sign=eUtWe3DdofklE5F+v3fyumZJGuBhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMTE2JnQ9MTYwOTcyNzExNiZyPTcyNzcyMzAyJmY9LzEzMjFjYmUwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>编译完成后界面如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/2eace200-4e34-11eb-9da7-616d01255b09.png?sign=nAU7F1MD/eo54uzMS7GX1xZI3m1hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMTY0JnQ9MTYwOTcyNzE2NCZyPTI0NjczMDI3JmY9LzJlYWNlMjAwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来我们将SoftEther设置为服务项。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建启动脚本/etc/systemd/system/vpnserver.service</span></span><br><span class="line">vi /etc/systemd/system/vpnserver.service</span><br></pre></td></tr></table></figure>
+<p>在脚本中输入如下内容（大家需要注意的是“/ root/vpnserver/”是你的安装路径，要自行修改）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Unit] </span><br><span class="line">Description=SoftEther Server </span><br><span class="line">After=network.target </span><br><span class="line">[Service] </span><br><span class="line">Type=forking </span><br><span class="line">ExecStart=/root/vpnserver/vpnserver start </span><br><span class="line">ExecStop= /root/vpnserver/vpnserver stop</span><br><span class="line"></span><br><span class="line">[Install] </span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<p>服务文件内容如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/60895150-4e34-11eb-9da7-616d01255b09.png?sign=9X2bxyp+QkwCDhKtMMxiHk5I7jxhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMjQ2JnQ9MTYwOTcyNzI0NiZyPTQ5MTE2Mjk1JmY9LzYwODk1MTUwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来启动服务，并设置为开机自启动，同时关闭防火墙。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">systemctl start vpnserver</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开机自启</span></span><br><span class="line">systemctl <span class="built_in">enable</span> vpnserver</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭防火墙</span></span><br><span class="line">systemctl stop firewalld</span><br></pre></td></tr></table></figure>
+<p>操作如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/933c4a80-4e34-11eb-9da7-616d01255b09.png?sign=+Kovf0t5EmExz7vnjSCLSj3sLldhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzMzM4JnQ9MTYwOTcyNzMzOCZyPTU0NTMzOTUwJmY9LzkzM2M0YTgwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>下面需要设置SoftEther管理员密码。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动管理设置</span></span><br><span class="line">./vpncmd</span><br></pre></td></tr></table></figure>
+<p>在使用命令模式下，选择1回车，即管理VPN服务器及网桥。<br><img src="https://coding-net-production-file-ci.codehub.cn/bc5d5030-4e34-11eb-9da7-616d01255b09.png?sign=b92AaQEC408Fe+4Aj1svH0l2xXFhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzNDAxJnQ9MTYwOTcyNzQwMSZyPTYxMzkwODkyJmY9L2JjNWQ1MDMwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>此时需要你输入主机名称或IP地址，这里什么也不用输入，直接回车即可（输入可能会出问题），如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/d3b87840-4e34-11eb-9da7-616d01255b09.png?sign=Ljrsxsp7ia759zSiUwVcGRLkXadhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzNDQ0JnQ9MTYwOTcyNzQ0NCZyPTQzMTkzNDEzJmY9L2QzYjg3ODQwLTRlMzQtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>不用输入，直接回车即可。<br><img src="https://coding-net-production-file-ci.codehub.cn/38278780-4e35-11eb-9da7-616d01255b09.png?sign=mCS+MwPwyEe8hdhn7ZJ8nm868GFhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzNjEwJnQ9MTYwOTcyNzYxMCZyPTE4MDYzNjgxJmY9LzM4Mjc4NzgwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来设置管理员密码，输入“ServerPasswordSet”后，再重复输入两次密码即可。<br><img src="https://coding-net-production-file-ci.codehub.cn/6b81e440-4e35-11eb-9da7-616d01255b09.png?sign=cP5QyCsv+++k9P6ZPLIM8lLehgBhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzNjk1JnQ9MTYwOTcyNzY5NSZyPTgwMTkyMzYyJmY9LzZiODFlNDQwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>再输入“exit”即可退出配置，此时服务安装与基本配置完成。</p>
+<h3 id="4、Windows下对服务器的图形化安装与配置"><a href="#4、Windows下对服务器的图形化安装与配置" class="headerlink" title="4、Windows下对服务器的图形化安装与配置"></a>4、Windows下对服务器的图形化安装与配置</h3><p>大家可以到“<a target="_blank" rel="noopener" href="https://www.softether-download.com/cn.aspx?product=softether%E2%80%9D%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E7%9A%84%E7%89%88%E6%9C%AC%E3%80%82">https://www.softether-download.com/cn.aspx?product=softether”下载最新的版本。</a><br><img src="https://coding-net-production-file-ci.codehub.cn/8c6d5220-4e35-11eb-9da7-616d01255b09.png?sign=DXGICFxLRVGKjHnKS+N09kHJIQxhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzNzUxJnQ9MTYwOTcyNzc1MSZyPTE5NjM1OSZmPS84YzZkNTIyMC00ZTM1LTExZWItOWRhNy02MTZkMDEyNTViMDkucG5nJmI9Y29kaW5nLW5ldC1wcm9kdWN0aW9uLWZpbGU="><br>接下来对于安将，就不配有文字了，全部图形。<br><img src="https://coding-net-production-file-ci.codehub.cn/bf55da40-4e35-11eb-9da7-616d01255b09.png?sign=oKk4aI6+hedv6iKJ4QC5ALLB3ShhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzODM3JnQ9MTYwOTcyNzgzNyZyPTU5ODQ0OTMmZj0vYmY1NWRhNDAtNGUzNS0xMWViLTlkYTctNjE2ZDAxMjU1YjA5LnBuZyZiPWNvZGluZy1uZXQtcHJvZHVjdGlvbi1maWxl"><br><img src="https://coding-net-production-file-ci.codehub.cn/f34bb3b0-4e35-11eb-9da7-616d01255b09.png?sign=mk9lXg32mHw64mnpqUOsIBwL9P9hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzOTI2JnQ9MTYwOTcyNzkyNiZyPTM3Mjk0ODMxJmY9L2YzNGJiM2IwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br><img src="https://coding-net-production-file-ci.codehub.cn/f350bcc0-4e35-11eb-9da7-616d01255b09.png?sign=ix3tNvKc/Q9sLvUdL2hBdiV5IGthPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzOTQzJnQ9MTYwOTcyNzk0MyZyPTk5MjMxNjkxJmY9L2YzNTBiY2MwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br><img src="https://coding-net-production-file-ci.codehub.cn/f3515900-4e35-11eb-9da7-616d01255b09.png?sign=qUXrUczOrJ2crB+QDD8td2POw/ZhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzOTUzJnQ9MTYwOTcyNzk1MyZyPTE3NTc4NzA4JmY9L2YzNTE1OTAwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br><img src="https://coding-net-production-file-ci.codehub.cn/f33f0980-4e35-11eb-9da7-616d01255b09.png?sign=1tEJHY9KEo5GY+ZBhralyih2UJRhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzOTY4JnQ9MTYwOTcyNzk2OCZyPTc1NDc1OTMmZj0vZjMzZjA5ODAtNGUzNS0xMWViLTlkYTctNjE2ZDAxMjU1YjA5LnBuZyZiPWNvZGluZy1uZXQtcHJvZHVjdGlvbi1maWxl"><br><img src="https://coding-net-production-file-ci.codehub.cn/f346f8c0-4e35-11eb-9da7-616d01255b09.png?sign=bxu2hxeno+gZ4x8Tyc+rOg4IhGNhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQzOTg2JnQ9MTYwOTcyNzk4NiZyPTMzOTc3NzgxJmY9L2YzNDZmOGMwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br><img src="https://coding-net-production-file-ci.codehub.cn/f4d4ebc0-4e35-11eb-9da7-616d01255b09.png?sign=YemHg2BzfVeuVx4hBu85CsHsxUthPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MDA0JnQ9MTYwOTcyODAwNCZyPTczNTI5Nzg0JmY9L2Y0ZDRlYmMwLTRlMzUtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来，我们在windows下对服务器进行配置。<br><img src="https://coding-net-production-file-ci.codehub.cn/83bf1270-4e36-11eb-9da7-616d01255b09.png?sign=8+cZUxRE1SDgtnsylzaB8xCgWBRhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MTY2JnQ9MTYwOTcyODE2NiZyPTQ0MDQzMjI5JmY9LzgzYmYxMjcwLTRlMzYtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>在1处输入你的名称，在2处输入你服务器的IP地址，在3处输入刚刚你在服务器上设置的管理密码，完成后，点击确定按钮。<br><img src="https://coding-net-production-file-ci.codehub.cn/83cb9590-4e36-11eb-9da7-616d01255b09.png?sign=IWlEeaLu0HhIanYBCJ6lbNVJuRthPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MTc2JnQ9MTYwOTcyODE3NiZyPTIzODg4MDY2JmY9LzgzY2I5NTkwLTRlMzYtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下选择你刚刚配置的服务器，点击“连接”来连接服务器。<br><img src="https://coding-net-production-file-ci.codehub.cn/83a5e520-4e36-11eb-9da7-616d01255b09.png?sign=/ZpOf4E6MMNNCxBpVfbDzrChUdphPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MTg2JnQ9MTYwOTcyODE4NiZyPTg1MDk1NDA2JmY9LzgzYTVlNTIwLTRlMzYtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>连接成功后，我们选择高级配置，后面我们手动处理，再点“关闭”按钮即可。<br><img src="https://coding-net-production-file-ci.codehub.cn/83b4d940-4e36-11eb-9da7-616d01255b09.png?sign=fNcelCZH6hP7U/FdfmjgBzCWTrFhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MTk3JnQ9MTYwOTcyODE5NyZyPTYxNTMwMTEzJmY9LzgzYjRkOTQwLTRlMzYtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>为了支持更多，我们选择“是”。<br><img src="https://coding-net-production-file-ci.codehub.cn/83b54e70-4e36-11eb-9da7-616d01255b09.png?sign=APA0Bj0nBFhygVi0W20Ii8+NMVdhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0MjExJnQ9MTYwOTcyODIxMSZyPTQ1MjI1NjQxJmY9LzgzYjU0ZTcwLTRlMzYtMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>我们要启用L2TP，以支持MAC系统，并在IPsec预共享密钥处输入你将来在MAC下连接使用的密码，完成后，点击“确定”按钮。<br><img src="https://coding-net-production-file-ci.codehub.cn/1875c030-4e37-11eb-9da7-616d01255b09.png?sign=qhF/SIvnNZFzX7at8uByvuE5uMphPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDE4JnQ9MTYwOTcyODQxOCZyPTUzODA4NzMwJmY9LzE4NzVjMDMwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>在弹出的提示里选择“否”即可。<br><img src="https://coding-net-production-file-ci.codehub.cn/18763560-4e37-11eb-9da7-616d01255b09.png?sign=cMksoIVdia3U8f7Lm8GzsSk0EfBhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDI3JnQ9MTYwOTcyODQyNyZyPTkxMTUwMjUzJmY9LzE4NzYzNTYwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来我们开始管理虚拟HUB，操作如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/187a7b20-4e37-11eb-9da7-616d01255b09.png?sign=fwD09xuimE8yG2JgCpOxd6E3DhxhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDM2JnQ9MTYwOTcyODQzNiZyPTQ0NTMxMTgwJmY9LzE4N2E3YjIwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>我们新建立一个用户，将来用来客户端的连接。<br><img src="https://coding-net-production-file-ci.codehub.cn/1880bcb0-4e37-11eb-9da7-616d01255b09.png?sign=cWVLgp5a1YDQfdjnW6+kXEvL9t9hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDQ4JnQ9MTYwOTcyODQ0OCZyPTU3MzI3NSZmPS8xODgwYmNiMC00ZTM3LTExZWItOWRhNy02MTZkMDEyNTViMDkucG5nJmI9Y29kaW5nLW5ldC1wcm9kdWN0aW9uLWZpbGU="><br>在1个选择“新建”来创建用户，在2处输入用户名，在3处选择“密码验证”，在4处输入用户登录密码，输入完成后，点击“确定”按钮确定完成。<br><img src="https://coding-net-production-file-ci.codehub.cn/18f836a0-4e37-11eb-9da7-616d01255b09.png?sign=3wkdtPhP2MFvx/4aLFVjwgnfYNlhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDYwJnQ9MTYwOTcyODQ2MCZyPTg3OTgzNDYwJmY9LzE4ZjgzNmEwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来设置虚拟NAT和DHCP服务器（这个地方的注意事项写在了本文的后面，大家可以参考）。<br><img src="https://coding-net-production-file-ci.codehub.cn/18fbe020-4e37-11eb-9da7-616d01255b09.png?sign=WzF7al8KG/G+Z0gDLwj7qx8pr9VhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NDcyJnQ9MTYwOTcyODQ3MiZyPTI0NDkxMDgwJmY9LzE4ZmJlMDIwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来启用安全NAT，选择“启用SecureNAT”项后，在弹出的界面中选择“确定”，如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/18f99630-4e37-11eb-9da7-616d01255b09.png?sign=po9FXZcrmjKwyojsCsbvgMyOQjNhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NTI0JnQ9MTYwOTcyODUyNCZyPTM0NDcxODQ4JmY9LzE4Zjk5NjMwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来设置安全NAT。<br><img src="https://coding-net-production-file-ci.codehub.cn/18614dd0-4e37-11eb-9da7-616d01255b09.png?sign=LgOv2VENVoUxml5zQXF1GCduY69hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NTM0JnQ9MTYwOTcyODUzNCZyPTc2Nzg1MDU5JmY9LzE4NjE0ZGQwLTRlMzctMTFlYi05ZGE3LTYxNmQwMTI1NWIwOS5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>要修改DNS服务器址，这一步非常重要，决定你能不能作为梯子来翻墙，如下图所示。<br><img src="https://coding-net-production-file-ci.codehub.cn/6ece3e30-4e37-11eb-aa49-41b99f3ef7ab.png?sign=MZ6hOfCGquD6lfACgMeDRUGJ9MNhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0NTU5JnQ9MTYwOTcyODU1OSZyPTI0NTMwMTM1JmY9LzZlY2UzZTMwLTRlMzctMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>那么问题来了，这个DNS服务器地址为什么是这个呢，这是因为这个是你服务的DNS所以还要我们到服务器中查看一下DNS的地址。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 查看DNS地址</span></span><br><span class="line"></span><br><span class="line">cat /etc/resolv.conf</span><br></pre></td></tr></table></figure>
+<p><img src="https://coding-net-production-file-ci.codehub.cn/1cf845a0-4e38-11eb-aa49-41b99f3ef7ab.png?sign=4pO1EHP6YBx0+evDbLrvyq1DCHNhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0ODUyJnQ9MTYwOTcyODg1MiZyPTE4MTAwMDk5JmY9LzFjZjg0NWEwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>此时服务器端的配置基本完成，接下来我们就可以使用各种客户端连接服务器了。</p>
+<h3 id="5、Win10进行客户端配置"><a href="#5、Win10进行客户端配置" class="headerlink" title="5、Win10进行客户端配置"></a>5、Win10进行客户端配置</h3><p>本例以Win10为例，进行连接测试。在系统的开始菜单处，选择设置按钮。<br><img src="https://coding-net-production-file-ci.codehub.cn/193c2800-4e38-11eb-aa49-41b99f3ef7ab.png?sign=qyZzXd/xWPWodmOcdgH9R/yuIzthPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0ODcwJnQ9MTYwOTcyODg3MCZyPTM4OTY5OTU4JmY9LzE5M2MyODAwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>选择“网络和Internet”项。<br><img src="https://coding-net-production-file-ci.codehub.cn/19b66110-4e38-11eb-aa49-41b99f3ef7ab.png?sign=wtwlhXPIuabD/g9dr7pEaiDVaoxhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0ODc4JnQ9MTYwOTcyODg3OCZyPTk1NDY4NDQ1JmY9LzE5YjY2MTEwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>选择左侧的“VPN”项。<br><img src="https://coding-net-production-file-ci.codehub.cn/19b92030-4e38-11eb-aa49-41b99f3ef7ab.png?sign=fXOu/yiA7rf0sZlN8AB7+JCGyYVhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0ODk0JnQ9MTYwOTcyODg5NCZyPTgzNTQzNTMwJmY9LzE5YjkyMDMwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>选择“添加VPN连接”项。<br><img src="https://coding-net-production-file-ci.codehub.cn/196274b0-4e38-11eb-aa49-41b99f3ef7ab.png?sign=h4OvDIdaPTWH0oH3IPvpYVo98/phPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ0OTAzJnQ9MTYwOTcyODkwMyZyPTE3MjgwNjA0JmY9LzE5NjI3NGIwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>在1处选择“Windows(内置)”，在2处输入你的名称，在3处输入你服务器的地址，在4处选择你的VPN类型，在5处输入预设共享密钥，这个在前面输入的，在6处理选择“用户名和密码”登录的类型，在7处输入你的之前创建的用户名，在8处输入你用户名应用的密码，确认无误后，点击“保存”按钮保存状态。<br><img src="https://coding-net-production-file-ci.codehub.cn/197f99a0-4e38-11eb-aa49-41b99f3ef7ab.png?sign=RracyPUVxUhN0tXWuxsBHNDGIddhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ1MjA2JnQ9MTYwOTcyOTIwNiZyPTM0OTYyNzI2JmY9LzE5N2Y5OWEwLTRlMzgtMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>接下来进行连接测试。</p>
+<p>接来下就是爽歪歪的时候了。</p>
+<h3 id="6、特殊说明"><a href="#6、特殊说明" class="headerlink" title="6、特殊说明"></a>6、特殊说明</h3><p>SecureNAT与本地虚拟网桥不能同时启用。因为他们有不同的用处，下拉来分别对应路径中的位置说明：</p>
+<p>（1）SecureNAT位置在，管理虚拟HUB（A） -&gt; 虚拟NAT和虚拟DHCP服务器，这里可以启用与禁用，它的作用是客户端连接服务器时会通过DHCP来获得一个新地址，应用场景是作为梯子使用，客户端与服务器处于一个子网环境中，需要给客户端配置DNS，这也是之前说重要的部分，需要给客户端配置服务器所使用的DNS，如果不配置或配置错误，会导致你不能上网，而只能与服务器连接。</p>
+<p>（2）本地虚拟网桥位置在主界面中的“本地网桥设置”中，正常情况下，我们选择虚拟HUB后，并选择物理网卡，创建后即可用，应用场景是作为内网穿透使用，在这种环境下，客户端连接服务器后，相当于客户端加入到服务器的局域网中，所以适用于穿透。那么问题来了，他不能上网吗？当然可以，如果你的服务器能直接连接外网，并且局域网中能够给客户端一个IP，也是可以用来作为梯子使用，但目前云服务器IP匮乏，厂商不可能再给你一个IP就是给你IP也是他们内网的IP，而这个IP大多数是不能直接连网的，所以这种方案适用于穿透（如果穿透，大家需要启用“VPN Azure设置”中启用“启用 VPN Azure”，这个是免费的，你能得到一个xxx.vpnazure.net的二级域名，在互联网上，你就可以通过这个访问企业内网了）。</p>
+<p>转自李老师 <a target="_blank" rel="noopener" href="https://www.lixh.cn/archives/2647.html">https://www.lixh.cn/archives/2647.html</a><br>上述有几处可能出现的问题，我是国外的vps,不用修改SecureNAT设置里面的DNS服务器ip,和vps服务器内的dns没关系,默认即可。<br><img src="https://coding-net-production-file-ci.codehub.cn/3aed3a60-4e39-11eb-aa49-41b99f3ef7ab.png?sign=jbh9/hHIUhEkzBf8HtvilolMfslhPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ1MzMwJnQ9MTYwOTcyOTMzMCZyPTkxNTMwMDc5JmY9LzNhZWQzYTYwLTRlMzktMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="><br>第二 注意放出的IP端口与SoftEther监听列表相同<br><img src="https://coding-net-production-file-ci.codehub.cn/93961100-4e39-11eb-aa49-41b99f3ef7ab.png?sign=gVnSLF/4EYzXegSKh79XVviISB9hPTEyNTcyNDI1OTkmaz1BS0lEYXk4M2xGbWFTNlk0TFRkek1WTzFTZFpPeUpTTk9ZcHImZT0xNjA5OTQ1NDgwJnQ9MTYwOTcyOTQ4MCZyPTYzNTc2ODgzJmY9LzkzOTYxMTAwLTRlMzktMTFlYi1hYTQ5LTQxYjk5ZjNlZjdhYi5wbmcmYj1jb2RpbmctbmV0LXByb2R1Y3Rpb24tZmlsZQ=="></p>
+
                 
             </div>
             <hr/>
@@ -623,7 +658,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://cool.hushuaiace.fun/2021/01/03/movie-ways/">http://cool.hushuaiace.fun/2021/01/03/movie-ways/</a>
+                    <a href="http://cool.hushuaiace.fun/2021/01/04/vpnServer/">http://cool.hushuaiace.fun/2021/01/04/vpnServer/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -661,8 +696,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
-                                    <span class="chip bg-color">小知识</span>
+                                <a href="/tags/%E7%BF%BB%E5%A2%99/">
+                                    <span class="chip bg-color">翻墙</span>
                                 </a>
                             
                         </div>
@@ -833,7 +868,7 @@
         repo: 'qq546002574.github.io',
         owner: 'qq546002574',
         admin: ["qq546002574"],
-        id: '2021-01-03T16-20-45',
+        id: '2021-01-04T10-07-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -859,9 +894,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/01/04/vpnServer/">
                     <div class="card-image">
@@ -879,9 +915,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -890,6 +926,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -908,13 +945,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/22/alibaba-svg/">
+                <a href="/2021/01/03/movie-ways/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="阿里巴巴矢量图标使用">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="视频破解">
                         
-                        <span class="card-title">阿里巴巴矢量图标使用</span>
+                        <span class="card-title">视频破解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -925,7 +962,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-03
                             </span>
                         <span class="publish-author">
                             
@@ -938,8 +975,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">前端技术</span>
+                    <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">小知识</span>
                     </a>
                     
                 </div>
